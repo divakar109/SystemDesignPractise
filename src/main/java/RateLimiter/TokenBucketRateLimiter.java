@@ -35,5 +35,4 @@ public class TokenBucketRateLimiter implements IRateLimiter {
         long tokensToRefill = (timeElapsedInNanos * refillRateInSeconds)/1000000000;
         currentTokens  = Math.min(tokensToRefill, capacity);
     }
-
 }
